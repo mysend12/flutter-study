@@ -36,7 +36,8 @@ dev_dependencies:
   json_serializable:
   freezed:
   build_runner:
-  sqflite_common_ffi: 
+  sqflite_common_ffi:
+  mockito:
 
 flutter:
   uses-material-design: true

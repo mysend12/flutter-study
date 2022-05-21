@@ -37,6 +37,10 @@ class MyApp extends StatelessWidget {
               backgroundColor: darkGray,
               elevation: 0.0,
             ),
+        textTheme: Theme.of(context).textTheme.apply(
+          bodyColor: Colors.white,
+        ),
+        unselectedWidgetColor: Colors.white,
       ),
       home: const NotesScreen(),
     );
