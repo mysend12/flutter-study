@@ -34,6 +34,13 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
   @override
   void initState() {
     super.initState();
+
+    if (widget.note != null) {
+      print(widget.note);
+      _titleController.text = widget.note!.title;
+      _contentController.text = widget.note!.content;
+    }
+
     Future.microtask(() {
       final viewModel = context.read<AddEditNoteViewModel>();
 
@@ -48,6 +55,7 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
 
   @override
   void dispose() {
+    super.dispose();
     _streamSubscription?.cancel();
     _titleController.dispose();
     _contentController.dispose();

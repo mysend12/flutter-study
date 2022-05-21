@@ -45,6 +45,7 @@ class AddEditNoteViewModel with ChangeNotifier {
     } else {
       await repository.updateNote(
         Note(
+          id: id,
           title: title,
           content: content,
           color: color,
