@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
@@ -79,7 +80,9 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Text("Shared files:", style: textStyleBold),
               Text(_sharedFiles?.map((f)=> f.path)?.join(",") ?? ""),
-              SizedBox(height: 100),
+            if (_sharedFiles != null)
+              Image.file(File(_sharedFiles![0].path)),
+            SizedBox(height: 100),
               Text("Shared urls/text:", style: textStyleBold),
               Text(_sharedText ?? "")
             ],
