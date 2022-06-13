@@ -17,6 +17,7 @@ dependencies:
   freezed_annotation:
   sqflite:
   dynamic_themes: ^1.1.0
+  receive_sharing_intent: ^1.4.5
 
 
 dev_dependencies:
