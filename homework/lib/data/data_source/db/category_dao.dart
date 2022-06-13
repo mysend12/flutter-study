@@ -6,16 +6,6 @@ class CategoryDAO {
 
   CategoryDAO(this.db);
 
-  // Future<Category?> getCategoryById(int id) async {
-  //   final List<Map<String, dynamic>> maps = await db.query(
-  //     'category',
-  //     where: 'id = ?',
-  //     whereArgs: [id],
-  //   );
-  //   if (maps.isNotEmpty) return Category.fromJson(maps.first);
-  //   return null;
-  // }
-
   Future<List<Category>> getCategoryList() async {
     final List<Map<String, dynamic>> maps = await db.query('category');
     return maps.map((e) => Category.fromJson(e)).toList();

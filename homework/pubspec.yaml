@@ -16,6 +16,7 @@ dependencies:
   json_annotation:
   freezed_annotation:
   sqflite:
+  dynamic_themes: ^1.1.0
 
 
 dev_dependencies:
