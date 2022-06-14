@@ -6,6 +6,7 @@ import 'package:homework/domain/use_case/category_use_case.dart';
 import 'package:homework/domain/use_case/favorite_use_case.dart';
 import 'package:homework/ui/home/home_event.dart';
 import 'package:homework/ui/home/home_state.dart';
+import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
 class HomeViewModel with ChangeNotifier {
   final CategoryUseCase categoryUseCase;
@@ -22,6 +23,10 @@ class HomeViewModel with ChangeNotifier {
     subject: "Category",
     categories: [],
     favorites: [],
+    showAppBar: true,
+    showBottomNavigationBar: true,
+    showFloatingActionButton: true,
+    sharedFiles: []
   );
 
   HomeState get state => _state;
@@ -32,7 +37,26 @@ class HomeViewModel with ChangeNotifier {
       changeBottomNavigationIndex: _changeBottomNavigationIndex,
       saveCategory: _saveCategory,
       removeCategory: _removeCateogory,
+      toggleAppBar: _toggleAppBar,
+      toggleBottomNavigationBar: _toggleBottomNavigationBar,
+      toggleFloatingActionButton: _toggleFloatingActionButton,
+      getSharedFiles: _getSharedFiles,
     );
+  }
+
+  void _toggleAppBar() {
+    _state = _state.copyWith(showAppBar: !(_state.showAppBar));
+    notifyListeners();
+  }
+
+  void _toggleBottomNavigationBar() {
+    _state = _state.copyWith(showBottomNavigationBar: !(_state.showBottomNavigationBar));
+    notifyListeners();
+  }
+
+  void _toggleFloatingActionButton() {
+    _state = _state.copyWith(showFloatingActionButton: !(_state.showFloatingActionButton));
+    notifyListeners();
   }
 
   Future<void> _loadCategories() async {
@@ -63,6 +87,11 @@ class HomeViewModel with ChangeNotifier {
     categoryArray.remove(category);
     await categoryUseCase.deleteCategory(category);
     _state = _state.copyWith(categories: categoryArray);
+    notifyListeners();
+  }
+
+  Future<void> _getSharedFiles(List<SharedMediaFile> list) async {
+    _state = state.copyWith(sharedFiles: list);
     notifyListeners();
   }
 }

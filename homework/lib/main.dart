@@ -7,6 +7,7 @@ import 'di/provider_setup.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final providers = await getProviders();
+
   runApp(
     MultiProvider(
       providers: providers,
@@ -24,12 +25,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorSchemeSeed: Colors.green,
+        colorSchemeSeed: Colors.yellow,
         brightness: Brightness.light,
         useMaterial3: true,
       ),
       darkTheme: ThemeData(
-        colorSchemeSeed: Colors.green,
+        colorSchemeSeed: Colors.blue,
         brightness: Brightness.dark,
         useMaterial3: true,
       ),
