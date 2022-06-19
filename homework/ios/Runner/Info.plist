@@ -59,6 +59,10 @@
 	</array>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>To upload photos, please allow permission to access your photo library.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>describe why your app needs access to the camera. This is called Privacy - Camera Usage Description in the visual editor.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>describe why your app needs access to the microphone, if you intend to record videos. This is called Privacy - Microphone Usage Description in the visual editor.</string>
 
 </dict>
 </plist>
