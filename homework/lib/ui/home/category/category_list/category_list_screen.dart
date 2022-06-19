@@ -1,16 +1,32 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
-import 'package:homework/ui/home/category/category_list/components/category_card.dart';
-import 'package:homework/ui/home/home_event.dart';
-import 'package:homework/ui/home/home_view_model.dart';
+import 'package:homework/ui/home/category/category_add/category_add_screen.dart';
+import 'package:homework/ui/home/category/category_event.dart';
+import 'package:homework/ui/home/category/category_view_model.dart';
 import 'package:provider/provider.dart';
+import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
 class CategoryListScreen extends StatelessWidget {
   const CategoryListScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final viewModel = context.watch<HomeViewModel>();
+    final viewModel = context.watch<CategoryViewModel>();
     final state = viewModel.state;
+
+    Future.delayed(const Duration(seconds: 1), () {
+      ReceiveSharingIntent.getMediaStream().listen(
+              (List<SharedMediaFile> value) {
+            if (value.isNotEmpty) {
+              viewModel.onEvent(CategoryEvent.getSharedFiles(value));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const CategoryAddScreen()));
+            }
+          }, onError: (err) {
+        print("getIntentDataStream error: $err");
+      });
+    });
 
     final colorList = [
       Theme.of(context).colorScheme.primaryContainer,
@@ -32,12 +48,9 @@ class CategoryListScreen extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
             onTap: () {
-              viewModel.onEvent(HomeEvent.removeCategory(state.categories[index]));
+              viewModel.onEvent(CategoryEvent.removeCategory(state.categories[index]));
             },
-            child: CategoryCard(
-              color: colorList[state.categories[index].color],
-              title: state.categories[index].title,
-            ),
+            child: Image.file(File(state.categories[index].title)),
           );
         },
       ),

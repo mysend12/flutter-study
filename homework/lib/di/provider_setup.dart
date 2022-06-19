@@ -4,6 +4,7 @@ import 'package:homework/data/repository/category_repository.dart';
 import 'package:homework/data/repository/favorite_repository.dart';
 import 'package:homework/domain/use_case/category_use_case.dart';
 import 'package:homework/domain/use_case/favorite_use_case.dart';
+import 'package:homework/ui/home/category/category_view_model.dart';
 import 'package:homework/ui/home/home_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
@@ -30,11 +31,15 @@ Future<List<SingleChildWidget>> getProviders() async {
   var favoriteUseCase = FavoriteUseCase(favoriteRepository);
 
   var homeViewModel = HomeViewModel(
-    categoryUseCase: categoryUseCase,
     favoriteUseCase: favoriteUseCase,
+  );
+
+  var categoryViewModel = CategoryViewModel(
+      categoryUseCase: categoryUseCase
   );
 
   return [
     ChangeNotifierProvider(create: (_) => homeViewModel),
+    ChangeNotifierProvider(create: (_) => categoryViewModel),
   ];
 }

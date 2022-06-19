@@ -5,7 +5,6 @@ import 'package:homework/ui/home/favorite/favorite_screen.dart';
 import 'package:homework/ui/home/home_event.dart';
 import 'package:homework/ui/home/home_view_model.dart';
 import 'package:provider/provider.dart';
-import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,19 +13,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final viewModel = context.watch<HomeViewModel>();
     final state = viewModel.state;
-
-    Future.delayed(const Duration(seconds: 1), () {
-      ReceiveSharingIntent.getMediaStream().listen(
-              (List<SharedMediaFile> value) {
-            if (value.isNotEmpty) {
-              viewModel.onEvent(HomeEvent.getSharedFiles(value));
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => const CategoryAddScreen()));
-            }
-          }, onError: (err) {
-        print("getIntentDataStream error: $err");
-      });
-    });
 
     return Scaffold(
       appBar: state.showAppBar
