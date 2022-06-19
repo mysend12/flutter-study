@@ -5,6 +5,7 @@ import 'package:homework/domain/model/category.dart';
 import 'package:homework/domain/use_case/category_use_case.dart';
 import 'package:homework/ui/home/category/category_event.dart';
 import 'package:homework/ui/home/category/category_state.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
 class CategoryViewModel with ChangeNotifier {
@@ -17,6 +18,7 @@ class CategoryViewModel with ChangeNotifier {
   CategoryState _state = CategoryState(
     categories: [],
     sharedFiles: [],
+    imagePickerFileList: [],
   );
 
   CategoryState get state => _state;
@@ -27,6 +29,7 @@ class CategoryViewModel with ChangeNotifier {
       removeCategory: _removeCategory,
       saveCategory: _saveCategory,
       getSharedFiles: _getSharedFiles,
+      getImagePickerFileList: _getImagePickerFileList,
     );
   }
 
@@ -52,13 +55,20 @@ class CategoryViewModel with ChangeNotifier {
     var categoryArray = _state.categories.toList();
     categoryArray.insert(0, category);
 
-    _state = _state.copyWith(categories: categoryArray);
+    _state = _state.copyWith(categories: categoryArray, sharedFiles: [], imagePickerFileList: []);
     notifyListeners();
   }
 
   Future<void> _getSharedFiles(List<SharedMediaFile> list) async {
     _state = state.copyWith(sharedFiles: list);
+    print('_getSharedFiles');
     notifyListeners();
   }
 
+  void _getImagePickerFileList(List<XFile> files) {
+    print('_getImagePickerFileList');
+    print(files.first.path);
+    _state = state.copyWith(imagePickerFileList: files);
+    notifyListeners();
+  }
 }
