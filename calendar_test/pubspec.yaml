@@ -14,6 +14,7 @@ dependencies:
   table_calendar: ^3.0.6
   cupertino_icons: ^1.0.2
   intl: ^0.17.0
+  http: ^0.13.4
 
 dev_dependencies:
   flutter_test:
