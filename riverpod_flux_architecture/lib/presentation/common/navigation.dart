@@ -1,9 +1,41 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_fimber/flutter_fimber.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:rxdart/rxdart.dart';
+
+Widget providerListener<T extends BaseVM>(ChangeNotifierProvider<T> provider,
+    {required OnProviderChange<T> onChange, required Widget child}) {
+  return ProviderListener<T>(
+    onChange: (context, vm) {
+      Fimber.d("onChange: ${vm.state}");
+      onChange(context, vm);
+      vm.resetEffects();
+    },
+    provider: provider,
+    child: child,
+  );
+}
+
+Widget providerListenerAutoDispose<T extends BaseVM>(
+    AutoDisposeChangeNotifierProvider<T> provider,
+    {required OnProviderChange<T> onChange,
+    required Widget child}) {
+  return ProviderListener<T>(
+    onChange: (context, vm) {
+      Fimber.d("onChange: ${vm.state}");
+      onChange(context, vm);
+      vm.resetEffects();
+    },
+    provider: provider,
+    child: child,
+  );
+}
 
 abstract class BaseVM<State> extends ChangeNotifier {
   State _state;
+
   State get state => _state;
 
   BaseVM(this._state);
