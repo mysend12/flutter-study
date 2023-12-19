@@ -1,16 +1,22 @@
-# uni_data_flow
+# 단방향 아키텍처 연습
 
-A new Flutter project.
+단방향 아키텍처를 연습하기 위한 프로젝트입니다.
 
-## Getting Started
+## 커밋 컨벤션
 
-This project is a starting point for a Flutter application.
+### 태그
+feat : 새로운 기능을 추가하는 경우 & 코드 리팩토링  
+fix : 버그를 고친경우  
+test : 테스트 코드. 리펙토링 테스트 코드를 추가했을 때  
+chore : 빌드 업무 수정, 패키지 매니저 수정  
+rename : 파일명(or 폴더명) 을 수정 & 이동 & 삭제한 경우  
+comment : 필요한 주석 추가 및 변경
+docs: 문서 추가 및 변경
 
-A few resources to get you started if this is your first Flutter project:
+### 메시지
+커밋메시지는 요약된 메시지와 함께 이슈 링크가 있다면 이슈 링크를 같이 올립니다.
+```
+feat: README.md 커밋 컨벤션 추가 
+feat: #1 README.md 커밋 컨벤션 추가 
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
