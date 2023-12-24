@@ -1,10 +1,12 @@
 import 'dart:ui';
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'common/dependency_injection.dart';
 import 'common/exception/exception_handler.dart';
+import 'firebase_options.dart';
 import 'ui/home/home_view.dart';
 
 void main() async {
@@ -21,6 +23,11 @@ void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
   await dependencyInjection();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const ProviderScope(child: MyApp()));
 }
 
