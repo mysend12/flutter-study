@@ -1,4 +1,4 @@
-package com.mysend.uni_data_flow
+package com.infosung.uni_data_flow
 
 import io.flutter.embedding.android.FlutterActivity
 
