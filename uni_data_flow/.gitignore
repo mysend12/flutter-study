@@ -47,3 +47,10 @@ app.*.map.json
 *.g.dart
 *.freezed.dart
 assets/sample.png
+/firebase.json
+/remoteconfig.template.json
+/.firebaserc
+/ios/firebase_app_id_file.json
+/macos/firebase_app_id_file.json
+/macos/Runner/GoogleService-Info.plist
+/lib/firebase_options.dart
