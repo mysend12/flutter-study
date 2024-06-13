@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/calendar_test/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/calendar_test/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/calendar_test/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_note_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_note_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_note_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/homework/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/homework/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/homework/build" />
+      <excludeFolder url="file://$MODULE_DIR$/image_search/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/image_search/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/image_search/build" />
+      <excludeFolder url="file://$MODULE_DIR$/on_off_flutter/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/on_off_flutter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/on_off_flutter/build" />
+      <excludeFolder url="file://$MODULE_DIR$/receive_sharing_intent_test/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/receive_sharing_intent_test/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/receive_sharing_intent_test/build" />
+      <excludeFolder url="file://$MODULE_DIR$/riverpod_flux_architecture/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/riverpod_flux_architecture/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/riverpod_flux_architecture/build" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_list/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_list/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_list/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_analytics/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_analytics/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_analytics/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_analytics/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_analytics/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_analytics/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_core/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_core/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_core/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_core/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_core/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_core/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_messaging/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_messaging/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_messaging/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_messaging/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_messaging/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_messaging/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_remote_config/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_remote_config/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_remote_config/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_remote_config/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_remote_config/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/firebase_remote_config/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/path_provider_foundation/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/path_provider_foundation/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/path_provider_foundation/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/path_provider_foundation/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/path_provider_foundation/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/path_provider_foundation/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/sqlite3_flutter_libs/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/sqlite3_flutter_libs/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/sqlite3_flutter_libs/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/sqlite3_flutter_libs/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/sqlite3_flutter_libs/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/ios/.symlinks/plugins/sqlite3_flutter_libs/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/linux/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/build" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/uni_data_flow/windows/flutter/ephemeral/.plugin_symlinks/sqlite3_flutter_libs/example/build" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>
